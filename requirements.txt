@@ -1,0 +1,10 @@
+Flask
+scikit-learn
+tensorflow==2.17.0
+keras==3.5.0
+numpy
+pandas
+matplotlib
+seaborn
+jsonify
+nltk
