@@ -70,3 +70,7 @@ def detect():
     result = 0 if prediction < 0.5 else 1
     
     return jsonify({'prediction': int(result)})
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
