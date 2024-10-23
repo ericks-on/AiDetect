@@ -9,3 +9,4 @@ seaborn
 jsonify
 nltk
 gunicorn
+flask-cors

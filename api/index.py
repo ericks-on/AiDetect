@@ -9,6 +9,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from nltk import pos_tag, word_tokenize
+from flask_cors import CORS
 import nltk
 
 
@@ -18,7 +19,7 @@ nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
 app = Flask(__name__)
-
+CORS(app)
 
 # function to add POS TAGS to text
 def add_pos(text):
