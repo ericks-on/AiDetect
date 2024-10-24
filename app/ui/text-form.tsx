@@ -12,7 +12,7 @@ export default function TextForm(
         e.preventDefault()
         setResults(-1)
         setDetecting(true)
-        fetch('http://ec2-18-133-180-144.eu-west-2.compute.amazonaws.com:8080/api/detect', {
+        fetch('/api/detect', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
