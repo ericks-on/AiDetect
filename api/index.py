@@ -70,7 +70,7 @@ def detect():
     
     result = 0 if prediction < 0.5 else 1
     
-    return jsonify({'prediction': int(result)})
+    return jsonify({'prediction': int(result), 'rate': round(prediction, 2)})
 
 
 if __name__ == '__main__':

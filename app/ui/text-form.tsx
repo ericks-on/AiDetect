@@ -4,7 +4,8 @@ import { useState } from "react"
 
 
 export default function TextForm(
-    {setResults: setResults}: {setResults: (results: number) => void}) {
+    {setResults: setResults, setRate: setRate}: 
+    {setResults: (results: number) => void, setRate: (rate: number) => void}) {
     const [text , setText] = useState('')
     const [detecting , setDetecting] = useState(false)
 
@@ -22,6 +23,7 @@ export default function TextForm(
         .then(res => res.json())
         .then(data => {
             setResults(data.prediction)
+            setRate(data.rate);
             console.log(data)
             setDetecting(false)
         })
