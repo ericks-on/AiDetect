@@ -4,17 +4,10 @@ This is an [NLP model ](https://github.com/ericks-on/NLP-Ai_generated_Text_detec
 
 ## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open this [link](https://vercel.com/api/toolbar/link/ai-detect-git-main-erickson-mbuvis-projects.vercel.app) with your browser to see the web app.
+```
+
 
